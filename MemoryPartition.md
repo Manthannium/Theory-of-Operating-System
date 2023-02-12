@@ -44,6 +44,13 @@ C     66    wait    0   110 (60+40+10 > 66)
 D     56    Q       4   0
 E     55    wait    0   0   (40+10 < 55)
 F     42    wait    0   50  (40+10 > 42)
+
+Memory blocks P:50, Q:60, R:20, S:30 . Job A,B,C demand 46,12,34
+
+BFA : A:P, B:R, C:Q
+BFO : A:P, B:R, C:wait for P
+FF  : A:P, B:Q, C:wait
+WF  : A:Q, B:P, C:wait
 ```
 
 ### Dynamic Partition
