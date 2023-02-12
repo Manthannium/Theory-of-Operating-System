@@ -35,13 +35,16 @@ It is felt to unalloted job iff sum of available memory > required memory
 ```
 Examples
 ```
-Memory blocks P:80, Q:60, R:40, S:20, T:10 using Best fit available
+Memory blocks P:80, Q:60, R:40, S:20, T:10 using Best fit Available
 
-Job   Need  Action  IF  EF
-A     76    
-Let Jobs A..F demand 76, 19, 66, 56, 55, 42 memory respectively. Write internal and external fragmentation at every stage.
+Job   Need  Action  IF  EF  Reason
+A     76    P       4   0
+B     19    S       1   0
+C     66    wait    0   110 (60+40+10 > 66)
+D     56    Q       4   0
+E     55    wait    0   0   (40+10 < 55)
+F     42    wait    0   50  (40+10 > 42)
 ```
-
 
 ### Dynamic Partition
 ````
