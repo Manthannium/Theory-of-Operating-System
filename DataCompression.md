@@ -15,4 +15,22 @@ else      : abcd -> 1abcd
 encode 010100000011 -> 0101,0000,0011 -> 10101,0,10011 -> 10101010011
 decode 010110011101 -> 0,10110,0,11101 -> 0000,0110,0000,1101 -> 0000011000001101
 ```
+Scheme 2
+```
+Make blocks of size 4
+Full zero : 0000 -> 0
+single 1  : 1000/0100/0010/0001 -> 10 <address of 1 in 2 bits> -> 1000/1001/1010/1011
+else      : abcd -> 11abcd
 
+// example
+encode 0101,0000,0100,0011 -> 110101,0,1001,110011
+decode 1010110110011101 -> 1010,110110,0,11101 -> 0010,0110,0000,101
+decode 110000 -> invalid as 11 means else block but it contains 0000 all zero
+
+// Note
+observe in this scheme if there is single 1 in block,
+then compression doesn't takes place as size remains same after encoding
+But if block size is 8 or more then compression takes place
+
+Also if there is not sufficient zero blocks then data expansion may also occur by encoding
+```
