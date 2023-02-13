@@ -34,3 +34,4 @@ But if block size is 8 or more then compression takes place
 
 Also if there is not sufficient zero blocks then data expansion may also occur by encoding
 ```
+During decoding try to verify whether it aligns with the encoding scheme. Else it is invalid
