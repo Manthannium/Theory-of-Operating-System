@@ -60,11 +60,17 @@ But since now it has become LP it can be preempted anytime by new HP.
 ```
 ```
 Quantum : 3,10
+
 Job Ready  Service   Interval
 P     0     20       0-5  18-19, 49-54
 Q     5     20       5-8  29-39, 64-71
 R     7     20       8-18 39-49
 S    19     20       19-29, 54-64 
+
+Job Ready Service Interval
+A    0     20      0-3,18-28,33-40
+B    1      8      3-8,28-31
+C    8     12      8-18,31-33
 ```
 MLFQ summary of various methods 
 ```
