@@ -66,7 +66,7 @@ Q     5     20       5-8  29-39, 64-71
 R     7     20       8-18 39-49
 S    19     20       19-29, 54-64 
 ```
-MLFQ summary
+MLFQ summary of various methods 
 ```
 1. RR with LP and HP quantums
 2. Above + HP can preempt LP before quantum
