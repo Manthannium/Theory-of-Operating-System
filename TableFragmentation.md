@@ -74,3 +74,24 @@ t=20, 8 units required, give 33-40
       M22 = 22,_ 
 Thus updation of info is like linked list
 ```
+Example 2
+```
+Format : (start of this, end of next)
+Given free slots of memory below
+95-99       M99 = 95,31
+19-31       M31 = 19,45
+42-45       M45 = 42,68
+60,68       M68 = 60,51
+49,51       M51 = 49,12
+8-12        M12 = 8,_
+
+Now below are new free blocks, show blocks that changes in memory
+55-58       M99 = 95,58
+            M58 = 55,31
+55-59       M68 = 55,51 (as continuos block from 55-68)
+69-72       M45 = 42,72
+            M72 = 60,51 (erase M68)
+46-48       M31 = 19,68
+            M68 = 60,51
+            M51 = 42,12
+```
