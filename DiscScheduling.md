@@ -44,6 +44,7 @@ Advantage – smarter than SCAN, completes task in path, only goes till last req
 Disadvantage - none (its best algo)
 ```
 |FCFS	|SSTF|	SCAN|	LOOK|
+|---|--|--|--|
 |starts|	First request|	First request|	T=0|	First request
 |Fills request in path|	No	|No|	Yes|	Yes|
 |Changes side	|Yes|	Yes|	No|	No|
