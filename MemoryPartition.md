@@ -18,8 +18,10 @@ Worst Fit (WF)
 - allocate biggest sized block available
 - avoid small holes
 
+Generally,
 In Static Partition, we use BFA and BFO
 In Dynamic, we use BFA, BFO, FF, WF
+However, we can do whatever we want
 ```
 
 ### Static Partition
