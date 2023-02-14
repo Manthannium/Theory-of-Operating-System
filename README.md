@@ -1,2 +1,2 @@
-# OS_Theory
-Theory of Operating System 
+# Theory of Operating System
+iz it correct ? yes!
