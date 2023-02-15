@@ -1,7 +1,11 @@
 # Rate Monotonic Scheduling
 ```
-Rate monotonic scheduling
-
+priority is given to most frequent job rather than shortest job
+But however take care of deadlines of all jobs
+If one misses deadline then it is infeasible
+Also check for % CPU use before solving
+```
+```
 1. Time periods of Job A and B are 20 and 30 respectively. Their service times are 8 and 16 respectively.
 In a span of 60 A0, A1 and A2 will arrive at time t=0, 20 and 40 respectively. Their deadlines are 20, 40 and 60 respectively.
 In a span of 60 B0 and B1 arrive at t=0,30 with deadline 30,60 respectively.
