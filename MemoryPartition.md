@@ -62,3 +62,12 @@ WF  : A:Q, B:P, C:wait
 ````
 In dynamic partition there is no internal or external fragmentation.
 ````
+```
+There is memory compaction where all occupied memories are shifted and accumulated
+So holes are all removed and free space is available at end
+
+eg. 0-10, 12-25, 30-60 memory is filled where holes of 1,4 size are there
+it is compacted to
+0-10,11-24,25-55 thus holes are removed and free space is added at end
+Thus external fragmentation doesn't happen
+```
