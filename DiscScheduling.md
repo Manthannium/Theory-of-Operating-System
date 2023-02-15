@@ -58,5 +58,10 @@ B    30       35    62    62   42    170
 C    36       50    68    56   96    164
 D    60       51    92    92   72     60
 E    62       74    94    94  122    138
-F    94      125   126   126  154    294
+F    94      125   157   157  157    294
+
+if there is no job left, then FCFS,SSTF,LOOK will wait at that location
+while SCAN goes on moving.
+FCFS and SSTF first decides then move while LOOK and SCAN fills the request in path
+LOOK changes direction if no job in that direction left but there is in another direction
 ```
