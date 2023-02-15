@@ -52,4 +52,12 @@ Job E:[0-12][12-13P]
 Even though C needs P at t=10 and is available but we will not give
 at t=12 if E asks we will give then at t=13 we give to D but not C
 injustice is imparted to C but this will avoid deadlock
+
+Job C:[run 10][needP][run7][needQ][run 3]
+Job D:[run 5][needQ][run8][needP][run 4]
+Job E:[run 12][needP][run 10]
+
+C:[0-10][wait for P][26-33P][33-36PQ]
+D:[0-5][5-13Q][13-22wait forP][22-26PQ]
+E:[0-12][12-22P]
 ```
