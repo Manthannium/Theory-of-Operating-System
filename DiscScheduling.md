@@ -65,3 +65,20 @@ while SCAN goes on moving.
 FCFS and SSTF first decides then move while LOOK and SCAN fills the request in path
 LOOK changes direction if no job in that direction left but there is in another direction
 ```
+```
+Disk scheduling: Let locations 0..100 [Total 101]
+Job  Arrival  Location  FCFS   SSTF   SCAN  LOOK  C-SCAN
+A      0        45       45     45     45    45     45
+B      42       40       50     50    160    50    140 
+C      43       44       54     46     44    44     44  
+D      60       80       96    100     80   100     80 
+
+Job Arrival Location  LOOK
+A     0      60        60
+B    30      42        42
+C    48      45        95
+D    56      65        65
+M    62      70        70
+E    71      80        180
+F    92      20        120
+```
