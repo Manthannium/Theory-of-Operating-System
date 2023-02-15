@@ -43,9 +43,9 @@ When no further request then changes the direction
 Advantage – smarter than SCAN, completes task in path, only goes till last request and thus avoiding path repetitions
 Disadvantage - none (its best algo)
 ```
-|FCFS	|SSTF|	SCAN|	LOOK|
-|---|--|--|--|
-|starts|	First request|	First request|	T=0|	First request
+|  |FCFS	|SSTF|	SCAN|	LOOK|
+|---|--|--|--|--|
+|starts|	First request|	First request|	T=0|	First request|
 |Fills request in path|	No	|No|	Yes|	Yes|
 |Changes side	|Yes|	Yes|	No|	No|
 
